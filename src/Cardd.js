@@ -1,12 +1,11 @@
-import {Button,Container,Card,Row,Col} from 'react-bootstrap';
-import img1 from './12.png';
+import {Button,Container,Card,Col} from 'react-bootstrap';
 function Cardd(){
     return (
         <div className='App'>
             <Container>
                 <Col>
                     <Card>
-                        <Card.Img variant="top" src={img1} style={{height:'400px',width:'1250px'}}/>
+                        <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" style={{height:'400px',width:'1250px'}}/>
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
                             <Card.Text>

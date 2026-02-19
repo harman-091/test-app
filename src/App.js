@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Profile from './Profile';
@@ -12,7 +11,11 @@ import DropDownn from './DropDownn';
 import Listgroupp from './Listgroupp';
 import Alertt from './Alertt';
 import Navbar from './Navbar';
-import './Navbar.css';
+import NameUpdate from './nameupdateuseState';
+import Precount from './precount';
+import NameChange from './namechange';
+import NumberList from './numberList';
+import HookCounterOne from './HookCounterr';
 
 
 
@@ -24,7 +27,22 @@ function App() {
         <Navbar/>
         <hr></hr>
         <hr></hr>
+        <HookCounterOne/>
+        <hr></hr>
+        <hr></hr>
+        <NumberList/>
+        <hr></hr>
+        <hr></hr>
+        <NameChange/>
+        <hr></hr>
+        <hr></hr>
         <Profile/>
+        <hr></hr>
+        <hr></hr>
+        <Precount/>
+        <hr></hr>
+        <hr></hr>
+        <NameUpdate/>
         <hr></hr>
         <hr></hr>
         <Cardd/>
