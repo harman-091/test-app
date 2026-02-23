@@ -16,6 +16,8 @@ import Precount from './precount';
 import NameChange from './namechange';
 import NumberList from './numberList';
 import HookCounterOne from './HookCounterr';
+import Calculator from './Calculator';
+import TodoList from './TodoList';
 
 
 
@@ -64,6 +66,10 @@ function App() {
         <Buttonss/>
         <ConButton/>
         <PrgBar/>
+        <hr></hr>
+        <hr></hr>
+        <Calculator/>
+        <TodoList/>
         <hr></hr>
         <hr></hr>
         <ColRow/>
