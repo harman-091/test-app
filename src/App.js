@@ -18,8 +18,8 @@ import NumberList from './numberList';
 import HookCounterOne from './HookCounterr';
 import Calculator from './Calculator';
 import TodoList from './TodoList';
-import Parent from "/.Parent";
 import Child from "./Child";
+import PChild from "./P_child";
 
 
 
@@ -31,7 +31,7 @@ function App() {
         <Navbar/>
         <hr></hr>
         <hr></hr>
-        <Child/>
+        <PChild/>
         <hr></hr>
         <hr></hr>
         <HookCounterOne/>
