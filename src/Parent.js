@@ -1,10 +1,10 @@
 import React from "react";
 import Child from "./Child";
-function Parentt(){
+function Parent(){
     return (
         <>
         <div>Parent Component</div>
         </>
     )
 }
-export default Parentt;
+export default Parent;
