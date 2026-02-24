@@ -18,7 +18,7 @@ import NumberList from './numberList';
 import HookCounterOne from './HookCounterr';
 import Calculator from './Calculator';
 import TodoList from './TodoList';
-import Parentt from "/.Parentt";
+import Parent from "/.Parent";
 import Child from "./Child";
 
 
