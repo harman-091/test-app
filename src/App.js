@@ -20,6 +20,7 @@ import Calculator from './Calculator';
 import TodoList from './TodoList';
 import Child from "./Child";
 import PChild from "./P_child";
+import Incredecre from './Incre_decrement';
 
 
 
@@ -33,6 +34,7 @@ function App() {
         <hr></hr>
         <PChild/>
         <hr></hr>
+        <Incredecre/>
         <hr></hr>
         <HookCounterOne/>
         <hr></hr>

@@ -31,7 +31,11 @@ const Incredecre = () => {
         }}>
             <h2 style={{color:"green"}}>GeeksforGeeks</h2>
             <h4></h4>
-
+            <p>Count:{count}</p>
+            <p>Function count:{funccount.size}</p>
+            <button onClick={incrementCounter}> Increase </button>
+            <button onClick={incrementCounter}> Decrease </button>
         </div>
     )
 }
+export default Incredecre;
