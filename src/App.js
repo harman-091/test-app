@@ -18,10 +18,10 @@ import NumberList from './numberList';
 import HookCounterOne from './HookCounterr';
 import Calculator from './Calculator';
 import TodoList from './TodoList';
-import Child from "./Child";
 import PChild from "./P_child";
 import Incredecre from './Incre_decrement';
 import UseREF from './UseREF';
+import SqNum from './SqNum';
 
 
 
@@ -31,6 +31,10 @@ function App() {
     <div>
         
         <Navbar/>
+        <hr></hr>
+        <hr></hr>
+        <SqNum/>
+        <hr></hr>
         <hr></hr>
         <UseREF/>
         <hr></hr>
