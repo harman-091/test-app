@@ -21,6 +21,7 @@ import TodoList from './TodoList';
 import Child from "./Child";
 import PChild from "./P_child";
 import Incredecre from './Incre_decrement';
+import UseREF from './UseREF';
 
 
 
@@ -31,6 +32,7 @@ function App() {
         
         <Navbar/>
         <hr></hr>
+        <UseREF/>
         <hr></hr>
         <PChild/>
         <hr></hr>
