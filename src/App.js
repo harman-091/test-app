@@ -1,29 +1,32 @@
-import React from "react";
-class App extends React.Component {
-    constructor(props){
-        super(props);
+import react, {Component} from 'react';
+import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
 
-        this.state = {color:'lightgreen'};
-    }
-    componentDidMount(){
-        setTimeout(()=> {
-            this.setState({color:"wheat"});
-        },2000);
-    }
-    render (){
-        return(
-            <div>
-                <p style={{
-                    color: this.state.color,
-                    backgroundColor:"rgba(0,0,0,0.88)",
-                    textAlign:"center",
-                    paddingTop:20,
-                    width:400,
-                    height:80,
-                    margin :"auto",
-                }}
-                >Hello Viewers...ABC here</p>
-            </div>
+class App extends Component {
+    render () {
+        return (
+            <Router>
+                <div className='App'>
+                    <ul className='App-header'>
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/">About</Link>
+                        </li>
+                        <li>
+                            <Link to="/">Contact</Link>
+                        </li>
+                    </ul>
+                    <Routes>
+                        <Route exact path='/' element={<Home/>}></Route>
+                        <Route exact path='/' element={<About/>}></Route>
+                        <Route exact path='/' element={<Contact/>}></Route>
+                    </Routes>
+                </div>
+            </Router>
         );
     }
 }
