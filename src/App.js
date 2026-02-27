@@ -1,33 +1,22 @@
-import react, {Component} from 'react';
-import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
+import React from "react";
+import { useSelector,useDispatch } from "react-redux";
+import { increment,decrement } from "./redux";
 
-class App extends Component {
-    render () {
-        return (
-            <Router>
-                <div className='App'>
-                    <ul className='App-header'>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/About">About</Link>
-                        </li>
-                        <li>
-                            <Link to="/Contact">Contact</Link>
-                        </li>
-                    </ul>
-                    <Routes>
-                        <Route exact path='/' element={<Home/>}></Route>
-                        <Route exact path='/About' element={<About/>}></Route>
-                        <Route exact path='/Contact' element={<Contact/>}></Route>
-                    </Routes>
-                </div>
-            </Router>
-        );
-    }
+function App (props) {
+    const count=useSelector(state=>state)
+    const dispatch = useDispatch()
+    return (
+        <div>
+            <header>
+                <h1>Counter Using React Redux Hooks</h1>
+                <p> by {' '}
+                    redux
+                </p>
+            </header>
+            <h2>{count}</h2>
+            <button onClick={()=>dispatch(decrement())}> - </button>
+            <button onClick={()=>dispatch(increment())}> + </button>
+        </div>
+    );
 }
-export default App;
+export default App
